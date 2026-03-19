@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Conferidor Mega-Sena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍀 Meus Jogos Mega-Sena</h1>
+        
+        <div id="resultado-oficial" class="card">
+            <h3>Último Sorteio (Concurso: <span id="concurso">-</span>)</h3>
+            <div id="dezenas-oficiais" class="bolas-container">
+                <!-- Números da API aparecerão aqui -->
+                <p>Carregando resultado...</p>
+            </div>
+            <p class="data-sorteio">Data: <span id="data-concurso">-</span></p>
+        </div>
+
+        <div id="meus-jogos" class="card">
+            <h3>Minhas Apostas</h3>
+            <div id="lista-jogos">
+                <!-- Seus jogos e acertos aparecerão aqui -->
+            </div>
+        </div>
+
+        <button onclick="conferirSorteio()" class="btn-atualizar">Atualizar e Conferir</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
